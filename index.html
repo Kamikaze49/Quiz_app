@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>DSC UG Quiz App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Welcome</h1>
+            <div class="inputs">
+                <p id="error"></p>
+                <input type="text" name="name" id="name_input" placeholder="Enter your name">
+                <select name="country" id="country_input">
+                </select>
+                <select name="category" id="category">
+                    <option value="html">HTML</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="SQL">SQL</option>
+                </select>
+            </div>
+            <a><button type="submit" id="sbtn">Take the Quiz</button></a>
+        </div>
+
+        <div class="question hide">
+            <h1>Question <span id="questionNum">1</span> of 20</h1>
+            <p id="question">What is the most important attribute of an anchor(a) tag in HTML?</p>
+            <div class="answers">
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c1">
+                    <label for="c1" class="answer">A. <span class="possible_answer">-</span></label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c2">
+                    <label for="c2" class="answer">B. <span class="possible_answer">-</span></label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c3">
+                    <label for="c3" class="answer">C. <span class="possible_answer">-</span></label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c4">
+                    <label for="c4" class="answer">D. <span class="possible_answer">-</span></label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c5">
+                    <label for="c5" class="answer">E. <span class="possible_answer">-</span></label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="answer_choice" id="c6">
+                    <label for="c6" class="answer">F. <span class="possible_answer">-</span></label>
+                </div>
+            </div>
+            <button class="cta submit_answer">Submit answer</button>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

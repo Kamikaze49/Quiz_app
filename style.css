@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    width: 40%;
+    height: 50%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 500px;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    color: #777;
+    font-size: 3em;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select{
+    font-size: 1em;
+    height: 50px;
+    margin: 10px 0;
+    border: 0;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+}
+
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: none;
+}
+
+#error{
+    color: rgb(170, 63, 63);
+}
+
+#sbtn{
+    height: 50px;
+    /* margin: 10px; */
+    width: 100%;
+    background-color: rgb(50, 78, 240);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.hide{
+    display: none !important;
+    visibility: hidden;
+    width: 0;
+}
+
+
+.question{
+    min-height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* min-width: 300px; */
+    /* border: 1px solid black; */
+}
+
+.answers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.choice{
+    border-radius: 3px;
+    flex: 1 1 350px;
+    background-color: #f4f4f4;
+    margin: 10px;
+    /* padding: 5px 15px; */
+}
+
+.answer{
+    font-size: 1em;
+}
+
+.cta{
+    height: 60px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 48%;
+    min-width: 300px;
+    align-self: flex-end;
+    font-size: 1em;
+}
+
+.submit_answer{
+    background-color: rgb(50, 78, 240);
+    color: #fff;
+    border: 0;
+}
+
+.correct{
+    border:2px solid rgb(63, 170, 63) !important;
+    background-color: rgb(220, 255, 220);
+    color: rgb(63, 170, 63);
+}
+
+.wrong{
+    border:2px solid rgb(170, 63, 63) !important;
+    background-color: rgb(255, 220, 220);
+    color: rgb(170, 63, 63);
+}
+
+.next{
+    background-color: #f4f4f4;
+    border: 1px solid rgb(50, 78, 240);
+    color:rgb(50, 78, 240);
+}
+
+input[type=radio] {
+    visibility:hidden;
+    display: none;
+}
+
+input:checked + label {
+    border:1px solid rgb(50, 78, 240);
+}
+
+label{
+    display: block;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
